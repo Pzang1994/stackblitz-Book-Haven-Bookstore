@@ -4,21 +4,86 @@
     <title>Book Haven Bookstore</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
+    <script src="https://kit.fontawesome.com/51b11af083.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+      <div class="header">
+        <span class="fa-solid fa-bars" class="header-icon"></span>
+        <img src="img/Client3_Logo_Orange.png" alt="Orange Book Haven Logo - an open book" class="header-icon">
+        <h1 style="display: inline;">Book Haven Bookstore</h1>
+        <span class="fa-solid fa-cart-shopping" class="header-icon"></span>
+        <span class="fa-solid fa-user" class="header-icon"></span>
+      </div>
+      <form class="searchbar">
+        <span class="empty"></span>
+        <input type="search" name="Catalogue" placeholder="Browse Catalogue...">
+        <button type="submit" style="display: none;"></button>
+      </form>
+      <nav>
+        <span class="empty"></span>
+        <a href="/" aria-current="page">Home</a>
+        <span class="vertical-line">|</span>
+        <a href="/About-Us.html">About Us</a>
+        <span class="vertical-line">|</span>
+        <a href="/Gallery.html">Gallery</a>
+        <span class="vertical-line">|</span>
+        <a href="/Events.html">Events</a>
+      </nav>
+    </header>
     <main>
-      <h1>Home page</h1>
+      <div class="banner">
+        <img src="img/Client3_Book3.png">
+        <h3>2024 Bestseller</h3 >
+      </div>
+      <div class="Box">
+        <div class="h4">
+        <h4><em>Browse by Category...</em></h4>
+        </div>
+        <div class="Categories">
+          <div class="Category">
+            <img src="img/Client3_Book3.png" class="Category-Picture">
+            <p>Fiction</p>
+          </div>
+          <div class="Category">
+            <img src="img/Client3_Book2.png" class="Category-Picture">
+            <p>Non-Fiction</p>
+          </div>
+          <div class="Category">
+            <img src="img/Client3_Book1.png" class="Category-Picture">
+            <p>Cooking</p>
+          </div>
+          <div class="Category">
+            <img src="img/Client3_ToteBag.png" class="Category-Picture">
+            <p>Merch</p>
+          </div>
+        </div>
     </main>
+    <footer>
+      <form>
+        <input type="search" Name="Newsletter" placeholder="Sign Up for our Newsletter...">
+        <button type="submit">Sign Up</button>
+      </form>
+      <div class="Box" id="Footer">
+        <div class="Social">
+          <h3>Follow Us!</h3>
+          <span class="fa-brands fa-facebook"></span>
+          <span class="fa-brands fa-instagram"></span>
+          <span class="fa-brands fa-twitter"></span>
+        </div>
+        <div class="links-1">
+          <a href="/About-Us.html">Contact Us</a>
+          <a>Hiring</a>
+          <a>Terms of Use</a>
+        </div>
+        <div class="links-2">
+          <a>Return Policy</a>
+          <a>Accessibility</a>
+          <a>Shipping Policy</a>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="script.js"></script>
   </body>
 </html>
