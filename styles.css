@@ -4,7 +4,7 @@
 
 /*background-color: #2E4057 (blue); 
 background-color: #EE583F (orange);
-background-color: #F78B3CC (rose);
+background-color: #F7B3CC (rose);
 background-color: #C7B65E (gold);
 background-color: #FFF7EE (white);
 color: #131C26;
@@ -21,8 +21,12 @@ body{
   color: #131C26;
 }
 
-header, #Footer{
+header, footer, #Footer{
   background-color: #2E4057;
+}
+
+header{
+  border-radius: 0px 0px 8px 8px;
 }
 
 .header{
@@ -54,14 +58,16 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 8px 8px 8px;
+  padding: 8px 8px 8px 8px;
+  border-radius: 8px;
+  background-color: #EE583F;
 }
 
 .empty{
   width: 70px;
 }
 
-.searchbar>input{
+.searchbar>input, .Newsletter>input{
   flex:1 1 auto;
   border-radius: 16px;
   border-style: none;
@@ -87,6 +93,11 @@ Nav{
     padding: 0px 8px;
   }
 }
+
+img{
+  border-radius: 8px;
+}
+
 .Category-Picture{
   width: 160px;
 }
@@ -99,6 +110,7 @@ Nav{
 
 .banner>img{
   width: 239px;
+  padding: 8px 0px 0px 0px;
 }
 
 .Box{
@@ -118,6 +130,17 @@ Nav{
 
 .Category>p{
   margin: 0px;
+}
+
+.Newsletter{
+  display: flex;
+  background-color:#C7B65E;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+footer{
+  border-radius: 8px 8px 0px 0px;
 }
 
 #Footer{
