@@ -47,7 +47,7 @@ header>nav{
 }
 
 #hamburger-links{
-  display: ;
+  display: none;
   position:absolute;
   left: 8px;
   list-style: none;
@@ -86,9 +86,6 @@ h1{
   color: #C1CFD6;
   margin: 0px;
   line-height: 25px;
-}
-
-#User{
 }
 
 .searchbar{
@@ -131,42 +128,59 @@ h1{
   }
 }
 
-img{
-  border-radius: 8px;
-}
-
-.Category-Picture{
-  width: 160px;
-}
-
 .banner{
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 4px double #F7B3CC;
+  border-radius: 8px;
 }
 
 .banner>img{
   width: 239px;
-  padding: 8px 0px 0px 0px;
+  margin: 8px 0px 0px 0px;
+}
+
+
+img{
+  border-radius: 8px;
 }
 
 .Box{
   background-color: #FFF7EE;
   border-radius: 8px;
-  padding: 4px 0px 8px 8px;
   display: flex;
+  flex: 1 1 auto;
   flex-direction:column;
   align-items: center;
+  margin-bottom: 8px;
+}
+
+
+.Category-Picture{
+  width: 160px;
+}
+
+.Categories{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Category{
+  width: 45%;
 }
 
 .Category{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 8px;
 }
 
 .Category>p{
   margin: 0px;
+  padding-top: 8px;
 }
 
 .Newsletter{
@@ -176,10 +190,63 @@ img{
   border-radius: 8px;
 }
 
+.Newsletter button{
+  margin-left: 8px;
+  border-radius: 8px;
+  background-color: #FFF7EE;
+  color: #131C26;
+  border-style: none;
+}
+
 footer{
   border-radius: 8px 8px 0px 0px;
 }
 
 #Footer{
   color:#C1CFD6;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.Social>h3{
+  margin: 16px 0px 8px 8px;
+}
+
+.Social{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #C1CFD6;
+}
+
+.Social-Icons{
+  margin: 0px 8px 0px 0px;
+}
+
+.Social-Icons span{
+  padding-left: 16px;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  font: 900 11px Arial, sans-serif
+}
+
+.links-1{
+  display:flex;
+  justify-content: space-around;
+}
+
+.links-1 a{
+  text-decoration: none;
+  color:#C1CFD6
+}
+
+.links-2{
+  display:flex;
+  justify-content: space-around;
 }
