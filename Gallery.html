@@ -9,20 +9,37 @@
   </head>
   <body>
     <header>
-      <span class="fa-solid fa-bars"></span>
-      <img src="img/Client3_Logo_Orange.png" alt="Orange Book Haven Logo - an open book" height="32px">
-      <h1 style="display: inline;">Book Haven Bookstore</h1>
-      <span class="fa-solid fa-cart-shopping"></span>
-      <span class="fa-solid fa-user"></span>
+      <div class="header">
+        <div id="hamburger-menu">
+          <span class="fa-solid fa-bars" id="hamburger"></span>
+          <ul id="hamburger-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/About-Us.html">About Us</a></li>
+            <li><a href="/"  aria-current="page">Gallery</a></li>
+            <li><a href="/Events.html">Events</a></li>
+          </ul>
+        </div>
+        <div class="Logo-and-Title">
+          <img src="img/Client3_Logo_Orange.png" alt="Orange Book Haven Logo - an open book" id="Logo">
+          <h1 style="display: inline;">Book Haven Bookstore</h1>
+        </div>
+        <span class="fa-solid fa-user" id="User"></span>
+      </div>
       <form class="searchbar">
         <input type="search" name="Catalogue" placeholder="Browse Catalogue...">
         <button type="submit" style="display: none;"></button>
+        <span class="fa-solid fa-cart-shopping" id="Cart"></span>
       </form>
       <nav>
-        <a href="/">Home</a>
-        <a href="/About-Us.html">About Us</a>
-        <a href="/Gallery.html" aria-current="page">Gallery</a>
-        <a href="/Events.html">Events</a>
+        <div id="full-menu">
+          <a href="/index.html">Home</a>
+          <span class="vertical-line">|</span>
+          <a href="/About-Us.html">About Us</a>
+          <span class="vertical-line">|</span>
+          <a href="/" aria-current="page">Gallery</a>
+          <span class="vertical-line">|</span>
+          <a href="/Events.html">Events</a>
+        </div>
       </nav>
     </header>
     <main>

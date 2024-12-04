@@ -10,26 +10,36 @@
   <body>
     <header>
       <div class="header">
-        <span class="fa-solid fa-bars" class="header-icon"></span>
-        <img src="img/Client3_Logo_Orange.png" alt="Orange Book Haven Logo - an open book" class="header-icon">
-        <h1 style="display: inline;">Book Haven Bookstore</h1>
-        <span class="fa-solid fa-cart-shopping" class="header-icon"></span>
-        <span class="fa-solid fa-user" class="header-icon"></span>
+        <div id="hamburger-menu">
+          <span class="fa-solid fa-bars" id="hamburger"></span>
+          <ul id="hamburger-links">
+            <li><a href="/" aria-current="page">Home</a></li>
+            <li><a href="/About-Us.html">About Us</a></li>
+            <li><a href="/Gallery.html">Gallery</a></li>
+            <li><a href="/Events.html">Events</a></li>
+          </ul>
+        </div>
+        <div class="Logo-and-Title">
+          <img src="img/Client3_Logo_Orange.png" alt="Orange Book Haven Logo - an open book" id="Logo">
+          <h1 style="display: inline;">Book Haven Bookstore</h1>
+        </div>
+        <span class="fa-solid fa-user" id="User"></span>
       </div>
       <form class="searchbar">
-        <span class="empty"></span>
         <input type="search" name="Catalogue" placeholder="Browse Catalogue...">
         <button type="submit" style="display: none;"></button>
+        <span class="fa-solid fa-cart-shopping" id="Cart"></span>
       </form>
       <nav>
-        <span class="empty"></span>
-        <a href="/" aria-current="page">Home</a>
-        <span class="vertical-line">|</span>
-        <a href="/About-Us.html">About Us</a>
-        <span class="vertical-line">|</span>
-        <a href="/Gallery.html">Gallery</a>
-        <span class="vertical-line">|</span>
-        <a href="/Events.html">Events</a>
+        <div id="full-menu">
+          <a href="/" aria-current="page">Home</a>
+          <span class="vertical-line">|</span>
+          <a href="/About-Us.html">About Us</a>
+          <span class="vertical-line">|</span>
+          <a href="/Gallery.html">Gallery</a>
+          <span class="vertical-line">|</span>
+          <a href="/Events.html">Events</a>
+        </div>
       </nav>
     </header>
     <main>

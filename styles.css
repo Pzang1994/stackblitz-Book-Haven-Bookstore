@@ -33,17 +33,51 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 8px 8px 8px;
-  font-size: 24px;
+  font-size: 20px;
+  padding: 8px;
+}
+
+.Logo-and-Title{
+  display: flex;
+  align-items: center;
 }
 
 header>nav{
   background-color: #EE583F;
 }
 
-.header-icon{
-  height: 30px;
-  margin: 0px 0px 0px 8px;
+#hamburger-links{
+  display: ;
+  position:absolute;
+  left: 8px;
+  list-style: none;
+  text-align: left;
+  padding: 0px;
+  margin:9px 0px 0px 0px;
+  background-color: #C7B65E;
+  border: 1px solid #2E4057;
+  border-radius: 0px 0px 8px 8px;
+}
+
+#hamburger-links a{
+  text-decoration: none;
+  color: #131C26;
+  text-align: left;
+  font: 900 20px Arial, sans-serif
+}
+
+#hamburger-links li{
+  padding: 8px;
+  border-bottom: 1px solid #2E4057;
+}
+
+#hamburger-links :last-child{
+  border-bottom: none;
+}
+
+#Logo{
+  height: 26px;
+  margin-right: 6px;
 }
 
 h1{
@@ -54,17 +88,20 @@ h1{
   line-height: 25px;
 }
 
+#User{
+}
+
 .searchbar{
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 8px 8px 8px 8px;
   border-radius: 8px;
   background-color: #EE583F;
+  font-size: 20px;
 }
 
-.empty{
-  width: 70px;
+#Cart{
+  margin-left: 8px;
 }
 
 .searchbar>input, .Newsletter>input{
@@ -76,18 +113,18 @@ h1{
   font-style: italic;
 }
 
-Nav{
+#full-menu{
   display: none;
 }
 
 @media all and (min-width:480px){
-  Nav{
+  #full-menu{
     padding: 8px;
     display: flex;
     font: 20px Calibri, sans-serif;
   }
 
-  Nav>a{
+  Nav a{
     text-decoration: none;
     color:#131C26;
     padding: 0px 8px;
