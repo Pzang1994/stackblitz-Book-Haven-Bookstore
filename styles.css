@@ -335,6 +335,32 @@ textarea{
   align-self: center;
 }
 
+#Main-Events{
+  display: flex;
+  flex-direction: column;
+}
+
+.Month{
+  margin-bottom: 4px;
+  align-self: center;
+  width: 66%;
+  text-align: center;
+  padding: 8px;
+  font-weight: 900;
+  background-color: #C7B65E;
+  border-radius: 8px;
+}
+
+.Event{
+  display: block;
+}
+
+.Event-2{
+  display: block;
+  background-color: revert;
+  border: 2px double #F7B3CC;
+}
+
 .Newsletter{
   display: flex;
   background-color:#C7B65E;
