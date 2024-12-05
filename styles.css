@@ -94,6 +94,10 @@ h1{
 h2{
   font: 900 25px Arial, sans-serif;
   text-align: center;
+  border: 2px double #F7B3CC;
+  border-radius: 8px;
+  margin: 4px;
+  padding: 16px;
 }
 
 input, textarea{
@@ -237,7 +241,6 @@ label{
   flex: 1 1 auto;
   flex-direction:column;
   align-items: center;
-  margin-bottom: 8px;
   padding: 16px;
 }
 
@@ -247,14 +250,26 @@ label{
 }
 
 .Gallery-Box{
-  width: 50%;
-  padding: 6px;
+  width: 46%;
+  margin: 4px;
   display: flex;
   flex-direction: column;
+  border: 2px solid #F7B3CC;
+  border-radius: 4px;
 }
 
 .Gallery-Box>img{
   width: 100%;
+}
+
+.Gallery-Box .Title{
+  text-align: center;
+  margin: 4px;
+}
+
+.Gallery-Box p{
+  font: 15px Comfortaa, sans-serif;
+  margin: 0px;
 }
 
 .review{
@@ -310,7 +325,7 @@ textarea{
 .Box button{
   border: 2px solid #2E4057;
   width: 50%;
-  margin-top: 6px;
+  margin: 6px;
   align-self: center;
 }
 
