@@ -23,13 +23,16 @@
           <img src="img/Client3_Logo_Orange.png" alt="Orange Book Haven Logo - an open book" id="Logo">
           <h1 style="display: inline;">Book Haven Bookstore</h1>
         </div>
+        <div id="placeholder-1"></div>
         <span class="fa-solid fa-user" id="User"></span>
       </div>
-      <form class="searchbar">
-        <input type="search" name="Catalogue" placeholder="Browse Catalogue...">
-        <button type="submit" style="display: none;"></button>
-        <span class="fa-solid fa-cart-shopping" id="Cart"></span>
-      </form>
+      <div id="placeholder-2">
+        <form id="searchbar">
+          <input type="search" name="Catalogue" placeholder="Browse Catalogue...">
+          <button type="submit" style="display: none;"></button>
+          <span class="fa-solid fa-cart-shopping" id="Cart"></span>
+        </form>
+      </div>
       <nav>
         <div id="full-menu">
           <a href="/index.html">Home</a>
@@ -51,7 +54,7 @@
         </p>
       </div>
       <div class="Address">
-        <span class="fa-solid fa-location-dot"></span><h3>Address of the Building</h3>
+        <h3><span class="fa-solid fa-location-dot"></span>Address of the Building</h3>
       </div>
       <div class="Store-Hours">
         <h5>Store Hours:</h5>
@@ -61,40 +64,52 @@
       </div>
       <div class="Box">
         <h4>Contact Us</h4>
-        <form>
-          <label for="name">Name*</label>
-          <input type="text" placeholder="Eg. John Smith" name="name" required>
-          <label for="email">Email*</label>
-          <input type="email" placeholder="Eg. TotallyMadeUpEmail@Fake.com" name="email" required>
-          <label for="phone">Phone</label>
-          <input type="tel" placeholder="Eg. (000) 867-5309" name="phone">
-          <label for="Feedback">Feedback/Message*</label>
-          <input type="text" placeholder="Please include your order # if you have one!" name="Feedback" required>
-          <button type="submit">Submit</button>
+        <form id="Contact-Us">
+          <div class="Contact-Fields">
+            <label for="name">Name*</label>
+            <input type="text" placeholder="Eg. John Smith" id="name" required autocomplete="on">
+          </div>
+          <div class="Contact-Fields">
+            <label for="email">Email*</label>
+            <input type="email" placeholder="Eg. TotallyMadeUpEmail@Fake.com" id="email" required autocomplete="on">
+          </div>
+          <div class="Contact-Fields">
+            <label for="phone">Phone</label>
+            <input type="tel" placeholder="Eg. (000) 867-5309" id="phone" autocomplete="off">
+          </div>
+          <div class="Contact-Fields">
+            <label for="Feedback">Feedback/Message*</label>
+            <textarea type="text" placeholder="Please Include your Order #" id="Feedback" required autocomplete="on"></textarea>
+          </div>
+            <button type="submit">Submit</button>
         </form>
       </div>
     </main>
     <footer>
       <form class="Newsletter">
-        <input type="search" Name="Newsletter" placeholder="Sign Up for our Newsletter...">
+        <input type="email" Name="Newsletter" placeholder="Sign Up for our Newsletter...">
         <button type="submit">Sign Up</button>
       </form>
-      <div class="Box" id="Footer">
+      <div id="Footer">
         <div class="Social">
           <h3>Follow Us!</h3>
-          <span class="fa-brands fa-facebook"></span>
-          <span class="fa-brands fa-instagram"></span>
-          <span class="fa-brands fa-twitter"></span>
+          <div class="Social-Icons">
+            <span class="fa-brands fa-facebook"></span>
+            <span class="fa-brands fa-instagram"></span>
+            <span class="fa-brands fa-twitter"></span>
+          </div>
         </div>
-        <div class="links-1">
-          <a href="/About-Us.html">Contact Us</a>
-          <a>Hiring</a>
-          <a>Terms of Use</a>
-        </div>
-        <div class="links-2">
-          <a>Return Policy</a>
-          <a>Accessibility</a>
-          <a>Shipping Policy</a>
+        <div class="links">
+          <div class="links-1">
+            <a href="/About-Us.html">Contact Us</a>
+            <a>Hiring</a>
+            <a>Terms of Use</a>
+          </div>
+          <div class="links-2">
+            <a>Return Policy</a>
+            <a>Accessibility</a>
+            <a>Shipping Policy</a>
+          </div>
         </div>
       </div>
     </footer>

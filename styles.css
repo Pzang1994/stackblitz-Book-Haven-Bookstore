@@ -91,6 +91,26 @@ h1{
   line-height: 25px;
 }
 
+h2{
+  font: 900 25px Arial, sans-serif;
+  text-align: center;
+}
+
+input, textarea{
+  border-radius: 16px;
+  border-style: none;
+  padding: 6px 8px;
+  font: 16px Calibri, sans-serif;
+}
+
+button{
+  border-radius: 8px;
+  color: #131C26;
+  border-style: none;
+  font: 900 16px Calibri, sans-serif;
+  text-align: center;
+}
+
 #searchbar{
   display: flex;
   align-items: center;
@@ -101,14 +121,9 @@ h1{
 
 #searchbar>input, .Newsletter>input{
   flex:1 1 auto;
-  border-radius: 16px;
-  border-style: none;
-  padding: 6px 8px;
-  font: 16px Calibri, sans-serif;
-  background-color: #FFF7EE;
 }
 
-#searchbar>input:placeholder-shown, .Newsletter>input:placeholder-shown{
+input:placeholder-shown, textarea:placeholder-shown{
   font-style: italic;
 }
 
@@ -151,6 +166,10 @@ h1{
     flex: auto;
     background-color: #2E4057;
   }
+
+  #Footer>.Social{
+    justify-content: space-evenly;
+  }
 }
 
 .banner{
@@ -180,10 +199,35 @@ img{
 
 h3{
   font: 20px Calibri, sans-serif;
+  text-align: center;
+  margin-top: 0px;
 }
 
 h4{
   font: 900 16px Calibri, sans-serif;
+  margin-top: -4px;
+  margin-bottom: 8px;
+}
+
+h5{
+  font: 900 16px Calibri, sans-serif;
+  margin: 4px;
+}
+
+#Contact-Us{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.Contact-Fields{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+label{
+  margin: 4px;
 }
 
 .Box{
@@ -194,8 +238,8 @@ h4{
   flex-direction:column;
   align-items: center;
   margin-bottom: 8px;
+  padding: 16px;
 }
-
 
 .Category-Picture{
   width: 100%;
@@ -226,6 +270,30 @@ h4{
   padding: 8px;
 }
 
+.Store-Hours{
+  text-align: center;
+  margin: 16px;
+}
+
+.Box input{
+  border: 2px solid #2E4057;
+}
+
+textarea{
+  border: 2px solid #2E4057;
+}
+
+#Feedback{
+  height: 8em;
+}
+
+.Box button{
+  border: 2px solid #2E4057;
+  width: 50%;
+  margin-top: 6px;
+  align-self: center;
+}
+
 .Newsletter{
   display: flex;
   background-color:#C7B65E;
@@ -235,12 +303,6 @@ h4{
 
 .Newsletter button{
   margin-left: 8px;
-  border-radius: 8px;
-  background-color: #FFF7EE;
-  color: #131C26;
-  border-style: none;
-  font: 900 16px Calibri, sans-serif;
-  text-align: center;
 }
 
 footer{
@@ -284,6 +346,7 @@ footer{
 .links-1{
   display:flex;
   justify-content: space-around;
+  margin-bottom: 8px;
 }
 
 .links-1 a{
@@ -294,4 +357,5 @@ footer{
 .links-2{
   display:flex;
   justify-content: space-around;
+  margin-bottom: 8px;
 }
