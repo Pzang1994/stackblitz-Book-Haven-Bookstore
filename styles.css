@@ -19,6 +19,7 @@ font: 900 11px Arial, sans-serif; (Captions)
 */
 body{
   color: #131C26;
+  background-color: #FFF7EE;
   font: 16px Calibri, sans-serif;
   padding: 0px;
   margin: 0px;
@@ -47,6 +48,10 @@ header{
 
 header>nav{
   background-color: #EE583F;
+}
+
+#hamburger{
+  cursor: pointer;
 }
 
 #hamburger-links{
@@ -91,6 +96,10 @@ h1{
   line-height: 25px;
 }
 
+#User{
+  cursor: pointer;
+}
+
 h2{
   font: 900 25px Arial, sans-serif;
   text-align: center;
@@ -123,7 +132,7 @@ button{
   background-color: #EE583F;
 }
 
-#searchbar>input, .Newsletter>input{
+#searchbar>input, #Newsletter>input{
   flex:1 1 auto;
 }
 
@@ -131,10 +140,77 @@ input:placeholder-shown, textarea:placeholder-shown{
   font-style: italic;
 }
 
-#Cart{
-  margin-left: 8px;
+#Sign-Up{
+  cursor: pointer;
 }
 
+button#MyCart-btn {
+  background-color: inherit;
+  padding: 4px 8px 4px 8px;
+  cursor: pointer;
+}
+
+#MyCart{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+#MyCart-Box{
+  background-color: #FFF7EE;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+}
+
+#Cart-header{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#YourCart{
+  font: 900 16px Calibri, sans-serif;
+  flex: 1 1 auto;
+  margin: 0px;
+}
+
+#x-cart{
+  color: #2E4057;
+  background-color: #C1CFD6;
+  font-size: 20px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+#Cart-header #x-cart-button{
+  background-color: transparent;
+  padding: 0px;
+}
+
+#Items{
+  padding: 10px;
+  border: 1px solid #EE583F;
+  border-radius: 8px;
+}
+
+#Items li{
+  font: 16px Calibri, sans-serif;
+  list-style:none;
+}
+
+#MyCart-Box button{
+  background-color:#2E4057;
+  color:#C1CFD6;
+  padding: 8px;
+  cursor: pointer;
+}
 
 #full-menu{
   display: none;
@@ -182,6 +258,7 @@ input:placeholder-shown, textarea:placeholder-shown{
 
 .banner{
   display: flex;
+  margin: 4px;
   flex-direction: column;
   align-items: center;
   border: 4px double #F7B3CC;
@@ -197,8 +274,13 @@ input:placeholder-shown, textarea:placeholder-shown{
 .banner>h3{
   padding: 8px;
   border-radius: 8px;
-  margin-top: 4px;
+  margin: 8px 0px 8px;
   background-color: #C7B65E;
+}
+
+.banner p{
+  width: 80%;
+  margin: 0px 0px 8px;
 }
 
 img{
@@ -269,7 +351,9 @@ label{
 
 .Gallery-Box .Title{
   text-align: center;
-  margin: 4px;
+  margin: 0px;
+  height: 40px;
+  align-content: center;
 }
 
 .Gallery-Box p{
@@ -328,11 +412,18 @@ textarea{
   height: 8em;
 }
 
-.Box button{
+.add-to-cart{
   border: 2px solid #2E4057;
+  background-color: #FFF7EE;
   width: 50%;
   margin: 6px;
   align-self: center;
+  cursor: pointer;
+}
+
+.banner .add-to-cart{
+  width: auto;
+  margin-bottom: 8px;
 }
 
 #Main-Events{
@@ -353,22 +444,24 @@ textarea{
 
 .Event{
   display: block;
+  margin: 2px 8px;
+  border: 2px double #2E4057;
 }
 
 .Event-2{
   display: block;
-  background-color: revert;
+  margin: 2px 8px;
   border: 2px double #F7B3CC;
 }
 
-.Newsletter{
+#Newsletter{
   display: flex;
   background-color:#C7B65E;
   padding: 8px;
   border-radius: 8px;
 }
 
-.Newsletter button{
+#Newsletter button{
   margin-left: 8px;
 }
 
@@ -425,4 +518,9 @@ footer{
   display:flex;
   justify-content: space-around;
   margin-bottom: 8px;
+}
+
+
+.links-1 a, .links-2 a, .Social-Icons span{
+  cursor: pointer;
 }

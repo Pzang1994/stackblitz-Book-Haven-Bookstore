@@ -13,14 +13,16 @@
         <div id="hamburger-menu">
           <span class="fa-solid fa-bars" id="hamburger"></span>
           <ul id="hamburger-links">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/" aria-current="page">About Us</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/About-Us.html" aria-current="page">About Us</a></li>
             <li><a href="/Gallery.html">Gallery</a></li>
             <li><a href="/Events.html">Events</a></li>
           </ul>
         </div>
         <div class="Logo-and-Title">
-          <img src="img/Client3_Logo_Orange.png" alt="Orange Book Haven Logo - an open book" id="Logo">
+          <a href="/index.html" alt="Home">
+            <img src="img/Client3_Logo_Orange.png" alt="Orange Book Haven Logo - an open book" id="Logo">
+          </a>
           <h1 style="display: inline;">Book Haven Bookstore</h1>
         </div>
         <div id="placeholder-1"></div>
@@ -30,14 +32,16 @@
         <form id="searchbar">
           <input type="search" name="Catalogue" placeholder="Browse Catalogue...">
           <button type="submit" style="display: none;"></button>
-          <span class="fa-solid fa-cart-shopping" id="Cart"></span>
+          <button type="button" id="MyCart-btn">
+            <span class="fa-solid fa-cart-shopping" id="Cart"></span>
+          </button>
         </form>
       </div>
       <nav>
         <div id="full-menu">
-          <a href="/index.html">Home</a>
+          <a href="/">Home</a>
           <span class="vertical-line">|</span>
-          <a href="/" aria-current="page">About Us</a>
+          <a href="/About-Us.html" aria-current="page">About Us</a>
           <span class="vertical-line">|</span>
           <a href="/Gallery.html">Gallery</a>
           <span class="vertical-line">|</span>
@@ -46,6 +50,18 @@
       </nav>
     </header>
     <main>
+      <div id="MyCart">
+        <div id="MyCart-Box">
+          <div id="Cart-header">
+            <h3 id="YourCart">Your Cart</h3>
+            <button id="x-cart-button" type="button"><span class="fa-solid fa-circle-xmark" id="x-cart"></span></button>
+          </div>
+          <ul id="Items">
+          </ul>
+          <button type="button" id="ClearCart">Clear Cart</button>
+          <button type="button" id="ProcessOrder">Process Order</button>
+        </div>
+      </div>
       <h2>About Us</h2>
       <div class="Box">
         <p class="About-Us">
@@ -64,7 +80,7 @@
       </div>
       <div class="Box">
         <h4>Contact Us</h4>
-        <form id="Contact-Us">
+        <form id="Contact-Us" autocomplete="on">
           <div class="Contact-Fields">
             <label for="name">Name*</label>
             <input type="text" placeholder="Eg. John Smith" id="name" required autocomplete="on">
@@ -81,14 +97,14 @@
             <label for="Feedback">Feedback/Message*</label>
             <textarea type="text" placeholder="Please Include your Order #" id="Feedback" required autocomplete="on"></textarea>
           </div>
-            <button type="submit">Submit</button>
+            <button type="submit" id="Submit">Submit</button>
         </form>
       </div>
     </main>
     <footer>
-      <form class="Newsletter">
+      <form id="Newsletter">
         <input type="email" Name="Newsletter" placeholder="Sign Up for our Newsletter...">
-        <button type="submit">Sign Up</button>
+        <button type="submit" id="Sign-Up">Sign Up</button>
       </form>
       <div id="Footer">
         <div class="Social">

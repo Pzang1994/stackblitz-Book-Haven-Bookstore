@@ -20,17 +20,21 @@
           </ul>
         </div>
         <div class="Logo-and-Title">
-          <img src="img/Client3_Logo_Orange.png" alt="Orange Book Haven Logo - an open book" id="Logo">
+          <a href="/index.html" alt="Home">
+            <img src="img/Client3_Logo_Orange.png" alt="Orange Book Haven Logo - an open book" id="Logo">
+          </a>
           <h1 style="display: inline;">Book Haven Bookstore</h1>
         </div>
         <div id="placeholder-1"></div>
-        <span class="fa-solid fa-user" id="User"></span>
+        <span class="fa-solid fa-user" id="User"></span> 
       </div>
       <div id="placeholder-2">
         <form id="searchbar">
           <input type="search" name="Catalogue" placeholder="Browse Catalogue...">
           <button type="submit" style="display: none;"></button>
-          <span class="fa-solid fa-cart-shopping" id="Cart"></span>
+          <button type="button" id="MyCart-btn">
+            <span class="fa-solid fa-cart-shopping" id="Cart"></span>
+          </button>
         </form>
       </div>
       <nav>
@@ -46,9 +50,31 @@
       </nav>
     </header>
     <main>
+      <div id="MyCart">
+        <div id="MyCart-Box">
+          <div id="Cart-header">
+            <h3 id="YourCart">Your Cart</h3>
+            <button id="x-cart-button" type="button"><span class="fa-solid fa-circle-xmark" id="x-cart"></span></button>
+          </div>
+          <ul id="Items">
+          </ul>
+          <button type="button" id="ClearCart">Clear Cart</button>
+          <button type="button" id="ProcessOrder">Process Order</button>
+        </div>
+      </div>
       <div class="banner">
-        <img src="img/Client3_Book3.png">
+        <img src="img/Client3_Book3.png" alt="Sorcerer's Shadowed Chronicles Cover">
         <h3>2024 Bestseller</h3 >
+        <h4 class="Title">Sorcerer's Shadowed Chronicles</h4>
+        <p>Here is a brief overview of what this book is about. You can see the full description
+          if you would only hit... <span><a class="read-more"><strong>+Read More</strong></a></span>
+      </p>
+      <div class="review">
+        <span class="fa-solid fa-star"></span><span class="fa-solid fa-star"></span><!--
+        --><span class="fa-solid fa-star"></span><span class="fa-solid fa-star"></span><!--
+        --><span class="fa-regular fa-star"></span><span>(777+)</span>
+      </div>
+      <button type="button" class="add-to-cart">Add to Cart</button>
       </div>
       <div class="Box">
         <div class="h4">
@@ -74,9 +100,9 @@
         </div>
     </main>
     <footer>
-      <form class="Newsletter">
+      <form id="Newsletter">
         <input type="email" Name="Newsletter" placeholder="Sign Up for our Newsletter...">
-        <button type="submit">Sign Up</button>
+        <button type="submit" id="Sign-Up">Sign Up</button>
       </form>
       <div id="Footer">
         <div class="Social">
