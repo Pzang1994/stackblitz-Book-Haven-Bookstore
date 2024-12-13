@@ -80,6 +80,7 @@ if(document.getElementsByClassName("add-to-cart")){
             //log(items);
             sessionStorage.setItem("Items", JSON.stringify(items));
             //log(title);
+            alert(`${title} added to cart!`);
         });
     };
     //log(addToCart);
