@@ -316,6 +316,14 @@ h5{
   justify-content: flex-start;
 }
 
+#Contact{
+  background-color: #2E4057;
+  color: #C1CFD6;
+  margin-top: 6px;
+  width: 25%;
+  align-self: center;
+}
+
 label{
   margin: 4px;
 }
