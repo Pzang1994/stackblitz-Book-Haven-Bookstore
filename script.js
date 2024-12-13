@@ -48,8 +48,8 @@ function contactUs(){
     alert("Thank you for your message, "+ who.name + "!");
 };
 
-if(document.getElementById("Submit")){
-    document.getElementById("Submit").addEventListener("click", contactUs);
+if(document.getElementById("Contact")){
+    document.getElementById("Contact").addEventListener("click", contactUs);
 };
 
 /*This took a really long time for me to figure out... Not having this if statement
